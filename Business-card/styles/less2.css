@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+.leftPart, .rightPart {
+    float: left;
+    height: 100vh;
+    font-family: "Open Sans", serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.leftPart {
+    background-color: #4c4a4e;
+    width: 35%;
+}
+
+.leftInfo {
+    position: relative;
+    top: 10vh;
+}
+
+.rightInfo {
+    position: relative;
+    top: 37vh;
+    font-weight: bold;
+}
+
+.rightPart {
+    background-color: #393a3a;
+    width: 65%;
+}
+
+
+.circle {
+    position: relative;
+    top: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 170px;
+    background-color: #909191;
+    border-radius: 70%;
+    box-shadow: 12px 3px 0 #5d5e5e;
+}
+
+.first, .second, .third {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #909191;
+    border-radius: 70%;
+    top: 10vh;
+    display: inline-block;
+}
+
+.first {
+    right: 1vw;
+}
+
+.third {
+    left: 1vw;
+}
+
+.CV {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    color: aliceblue;
+    position: relative;
+    top: 20vh;
+    border-radius: 30px;
+    border: 3px solid aliceblue;
+    padding: 10px;
+}
+
+.CV:hover {
+    color: #4c4a4e;
+    background: aliceblue;
+}
+
+.res {
+    position: relative;
+    top: 30vh;
+}
+
+
+
+
