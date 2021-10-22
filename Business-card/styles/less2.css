@@ -121,11 +121,8 @@
 }
 
 .rightName {
-  position: absolute;
-  width: 321px;
-  height: 71px;
-  left: 52%;
-  top: 224px;
+  position: relative;
+  top: 37%;
   font-family: Helvetica, serif;
   font-style: normal;
   font-weight: bold;
@@ -136,11 +133,8 @@
 }
 
 .rightActivity {
-  position: absolute;
-  width: 140px;
-  height: 25px;
-  left: 60%;
-  top: 323px;
+  position: relative;
+  top: 27%;
   font-family: Helvetica, serif;
   font-style: normal;
   font-weight: normal;
