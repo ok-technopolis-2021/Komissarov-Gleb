@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>визитка</title>
-    <link rel="stylesheet" href="/styles/less2.css">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
-<body>
-    <div class="leftPart">
-        <main>
-            <h1 class="name">Alex Smith</h1>
-            <h3 class="activityField">Web Designer</h3>
-        </main>
-        <div class="circle"></div>
-        <div class="circles">
-            <div class="elementLeft"></div>
-            <div class="elementCenter"></div>
-            <div class="elementRight"></div>
+    <body>
+        <div class="table">
+            <section class="leftPart">
+                <main class="info">
+                    <img class="mainPic" src="/files/av.png" alt="avatar">
+                    <h1 class="name">Gleb Komissarov</h1>
+                    <h3 class="position">Software Engineer</h3>
+                </main>
+                <nav class="social">
+                    <a href="https://t.me/alltheshamefeelsthesame"><img class="telegram" src="/files/telegram.png" alt="avatar"></a>
+                    <a href="https://github.com/alltheshamefeelsthesame"><img class="github" src="/files/github.png" alt="avatar"></a>
+                    <a href="https://open.spotify.com/user/klwzpdcougdk7wpb88vkq268z?si=5fa135f75671450e"><img class="spotify" src="/files/spotify.png" alt="avatar"></a>
+                </nav>
+                <div class="CV">
+                    <button class="button">Download CV</button>
+                </div>
+                <footer class="copyright">
+                    <h3>&copy;2021 All rights reserved.</h3>
+                </footer>
+            </section>
+            <section class="rightPart">
+                <div class="rightInfo">
+                    <h1 class="huge-name">Gleb Komissarov</h1>
+                    <h3 class="huge-position">System Programmer & Java Developer</h3>
+                </div>
+            </section>
         </div>
-        <div class="CVBoarder"></div>
-        <a href="/files/moreThanJustCV.txt" download="" class="CV">Download CV</a>
-        <div class="copyright">@2020 All rights reserved.</div>
-    </div>
-    <section class="rightPart">
-        <h1 class="rightName">Alex Smith</h1>
-        <h3 class="rightActivity">Web designer</h3>
-    </section>
-</body>
+    </body>
 </html>

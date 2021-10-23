@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  line-height: 1.15;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Helevetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.table {
+  display: flex;
+  width: 1127px;
+  height: 595px;
+  background-color: #444444;
+  border-radius: 40px;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+}
+
+.info {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.mainPic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 12px 10px 3px #5d5e5e;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 0;
+}
+
+.position {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.telegram, .github, .spotify {
+  margin: 20px 7px 57px;
+  width: 24px;
+  height: 24px;
+}
+
+.button {
+  padding: 10px 30px;
+  font-size: 17px;
+  background: #444444;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 40px;
+  margin-bottom: 0;
+}
+
+.button:hover {
+  background: #FFFFFF;
+  color: #444444;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 50px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #222222;
+  width: 747px;
+  border-radius: 40px;
+  height: 100%;
+}
+
+.huge-name {
+  margin-top: 26px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 62px;
+}
+
+.huge-position {
+  margin: 0;
+  font-weight: normal;
+  font-size: 22px;
+}
