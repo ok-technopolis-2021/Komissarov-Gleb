@@ -2,6 +2,19 @@ html {
   height: 100%;
 }
 
+:root {
+  --font-color: #FFFFFF;
+  --left-background: #444444;
+  --right-background: #222222;
+  --switch-img: url("../files/modes.png");
+}
+
+:root[attribute='light'] {
+  --font-color: #696969;
+  --left-background: #FFE4B5;
+  --right-background: #D2B48C;
+}
+
 body {
   display: flex;
   line-height: 1.15;
@@ -11,18 +24,18 @@ body {
   padding: 0;
   margin: 0;
   font-family: Helevetica, sans-serif;
-  color: #FFFFFF;
+  color: var(--font-color);
 }
 
 .table {
   display: flex;
   width: 1127px;
   height: 595px;
-  background-color: #444444;
+  background-color: var(--left-background);
   border-radius: 40px;
 }
 
-.leftPart {
+.left-part {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,14 +50,14 @@ body {
   margin-bottom: 0;
 }
 
-.mainPic {
+.info__avatar {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  box-shadow: 12px 10px 3px #555555;
+  box-shadow: 12px 10px 3px var(--right-background);
 }
 
-.name {
+.info__name-employee {
   font-weight: bold;
   font-size: 38px;
   line-height: 44px;
@@ -53,7 +66,7 @@ body {
   margin-bottom: 0;
 }
 
-.position {
+.info__position-employee {
   margin-top: 8px;
   margin-bottom: 0;
   font-weight: normal;
@@ -62,28 +75,32 @@ body {
   text-align: center;
 }
 
-.telegram, .github, .spotify {
+.social__telegram, .social__github, .social__spotify {
   margin: 20px 7px 57px;
   width: 24px;
   height: 24px;
 }
 
-.button {
+.CV__button {
   padding: 10px 30px;
   font-size: 17px;
-  background: #444444;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  background: var(--left-background);
+  color: var(--font-color);
+  border: 3px solid var(--font-color);
   border-radius: 40px;
   margin-bottom: 0;
 }
 
-.button-content {
+.CV__button-content {
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--font-color);
 }
 
-.button-content:hover {
+.CV__button:hover {
+  border-color: #00da5f;
+}
+
+.CV__button-content:hover {
   color:deepskyblue;
 }
 
@@ -93,27 +110,62 @@ body {
   font-size: 14px;
 }
 
-.rightPart {
+.right-part {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #222222;
+  background: var(--right-background);
   width: 747px;
   border-radius: 40px;
   height: 100%;
 }
 
-.huge-name {
+.right-info__name-employee {
   margin-top: 26px;
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 62px;
 }
 
-.huge-position {
+.right-info__position-employee {
   margin: 0;
   font-weight: normal;
   font-size: 22px;
 }
+
+.theme {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 95%;
+  left: 90%;
+}
+
+
+.theme__button {
+  width: 31px;
+  height: 31px;
+  border: none;
+  background-image: var(--switch-img);
+  background-color: var(--right-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+
+.theme__button:hover {
+  animation: bounce 0.7s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+

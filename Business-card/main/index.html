@@ -8,30 +8,36 @@
 </head>
     <body>
         <div class="table">
-            <section class="leftPart">
+            <section class="left-part">
                 <main class="info">
-                    <img class="mainPic" src="/files/avatar.jpg" alt="avatar">
-                    <h1 class="name">Gleb Komissarov</h1>
-                    <h3 class="position">Software Engineer</h3>
+                    <img class="info__avatar" src="/files/avatar.jpg" alt="avatar">
+                    <h1 class="info__name-employee">Gleb Komissarov</h1>
+                    <h3 class="info__position-employee">Software Engineer</h3>
                 </main>
                 <nav class="social">
-                    <a href="https://t.me/alltheshamefeelsthesame"><img class="telegram" src="/files/telegram.png" alt="avatar"></a>
-                    <a href="https://github.com/alltheshamefeelsthesame"><img class="github" src="/files/github.png" alt="avatar"></a>
-                    <a href="https://open.spotify.com/user/klwzpdcougdk7wpb88vkq268z?si=5fa135f75671450e"><img class="spotify" src="/files/spotify.png" alt="avatar"></a>
+                    <a href="https://t.me/alltheshamefeelsthesame"><img class="social__telegram" src="/files/telegram.png" alt="avatar"></a>
+                    <a href="https://github.com/alltheshamefeelsthesame"><img class="social__github" src="/files/github.png" alt="avatar"></a>
+                    <a href="https://open.spotify.com/user/klwzpdcougdk7wpb88vkq268z?si=5fa135f75671450e"><img class="social__spotify" src="/files/spotify.png" alt="avatar"></a>
                 </nav>
                 <div class="CV">
-                    <button class="button"><a href="../files/CV.txt" class="button-content" download>Download CV</a></button>
+                    <button class="CV__button"><a href="../files/CV.pdf" class="CV__button-content" download>Download CV</a></button>
                 </div>
                 <footer class="copyright">
-                    <h3>&copy;2021 All rights reserved.</h3>
+                    <p>&copy;2021 All rights reserved.</p>
                 </footer>
             </section>
-            <section class="rightPart">
-                <div class="rightInfo">
-                    <h1 class="huge-name">Gleb Komissarov</h1>
-                    <h3 class="huge-position">System Programmer & Java Developer</h3>
+            <section class="right-part">
+                <div class="right-info">
+                    <h1 class="right-info__name-employee">Gleb Komissarov</h1>
+                    <h3 class="right-info__position-employee">System Programmer & Java Developer</h3>
                 </div>
+                <footer class="theme">
+                    <button class="theme__button">
+                        <img src="/files/modes.png" alt="switch themes" hidden>
+                    </button>
+                </footer>
             </section>
         </div>
+        <script src="../scripts/themes.js"></script>
     </body>
 </html>
