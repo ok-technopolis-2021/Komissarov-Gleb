@@ -86,9 +86,9 @@ addButton.addEventListener('click', (qualifiedName, value) => {
 
         const submitSkill = document.createElement('input');
         submitSkill.innerText = 'skill';
-        submitSkill.className = 'skill__input';
+        submitSkill.className = 'skill__input'
         submitSkill.setAttribute('placeholder', "Enter skill");
-        submitSkill.name = 'skills';
+        submitSkill.name = 'skills'
         submitSkill.setAttribute('maxlength', "15");
 
         const submitPercent = document.createElement('input');

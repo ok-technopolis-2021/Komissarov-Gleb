@@ -7,11 +7,11 @@ const image = require('gulp-image');
 
 const assetsPath = 'src/assets/*';
 const stylesPath = './src/styles/**/*.scss';
-const jsPath = 'src/**/*.js';
+const jsPath = 'src/scripts/*.js';
 const htmlPath = './src/index.html';
 const distPath = './dist/';
 const rollupConfig = {
-    input: 'src/app.js',
+    input: 'src/scripts/app.js',
     plugins: [
         // Не используем в rollup, используем это в gulp
         // scss(), // will output compiled styles to output.css
