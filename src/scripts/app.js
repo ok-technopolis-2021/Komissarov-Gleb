@@ -10,13 +10,14 @@ class Skill {
     }
 
     render(target) {
-        let block = document.createElement('div');
-        let current = document.createElement('progress');
-        let currentTitle = document.createElement('span');
-        let but = document.createElement('button');
+        const block = document.createElement('div');
+        const current = document.createElement('progress');
+        const currentTitle = document.createElement('span');
+        const but = document.createElement('button');
 
         but.addEventListener('click', function () {
-            if (--currentCount === 0) {
+            if (--currentCount <= 0) {
+                currentCount = 0;
                 const deletedDiv = document.createElement('div');
                 const deletedHOne = document.createElement('h1');
                 const deletedHThree = document.createElement('h3');
